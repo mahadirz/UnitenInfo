@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FF9999"
+    android:layout_height="match_parent" >
+    
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-9622708780152447/6520133416"
+                         android:layout_below="@id/tv_header_add"
+                         android:background="#FF9999"
+                         ads:adSize="SMART_BANNER"/>
+    
+    <TextView
+        android:id="@+id/tv_header_add"
+        style="@style/hdrStyleBlue"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:text="@string/str_timetable_header"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_timetable_refresh"
+        style="@style/hdrStyleBlue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableTop="@drawable/refresh_white_icon" />
+    
+
+
+
+    
+    
+    <WebView
+        android:id="@+id/webtimetable"
+        android:layout_below="@id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:hapticFeedbackEnabled="true" />
+    
+        <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_height="wrap_content"
+       />
+
+       
+
+</RelativeLayout>

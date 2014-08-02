@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Uniten Student Info</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="action_settings">Logout</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+
+     <string name="str_biodata_header">BIODATA</string>
+     <string name="str_timetable_header">TIME TABLE</string>
+     <string name="str_examresults_header">EXAM RESULTS</string>
+     <string name="str_scorun_header">SCORUN</string>
+     <string name="str_ledger_header">LEDGER BALANCE</string>
+     <string name="str_class_notices">CLASS NOTICES</string>
+     
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Biodata</item>
+        <item >Class Notices</item>
+        <item >Ledger Balance</item>
+        <item >Results</item>
+        <item >Scorun</item>
+        <item >Time Table</item>
+        <item >Full Time Table</item>
+        <item >Event Checkin</item>
+        <item >About</item>
+    </string-array>
+     
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/notices</item>
+        <item>@drawable/ledger</item>
+        <item>@drawable/result</item>
+        <item>@drawable/scorun</item>
+        <item>@drawable/timetable</item>
+        <item>@drawable/calendar_link</item>
+        <item>@drawable/wi_fi_zone</item>
+        <item>@drawable/about</item>
+    </array>
+     
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
