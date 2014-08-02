@@ -9,14 +9,24 @@ Source Code of Uniten Student Info (Android)
 
 ## Features
 
-*Biodata 
-*Class Notice
-*Ledger Balance
-*Result
-*Time table
+* Biodata 
+* Class Notice
+* Ledger Balance
+* Result
+* Time table
+
+## How to contribute
+
+Please watch this basic tutorial from youtube of how to 
+use Github, I would be very glad to have people especially 
+from Uniten's students to contribute to this project.
+
+[Watch Tutorial ](http://www.youtube.com/watch?v=U8GBXvdmHT4)
 
 
 ## Special Thanks
+
+* Acknowledgement to the contributors will be added here.
 
 
 ## Licence
