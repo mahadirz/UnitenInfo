@@ -175,7 +175,7 @@ public class HttpParser {
 
 		// fetch html from url
 		String html = FetchUrL(url);
-		if (html == null || html == "No_Internet")
+		if (html == null || html == "No_Internet" || html == "Unauthorized")
 			return null;
 
 		HashMap<String, String[]> result = new HashMap<String, String[]>();
@@ -328,7 +328,7 @@ public class HttpParser {
 
 		// fetch html from url
 		String html = FetchUrL(url);
-		if (html == null || html == "No_Internet")
+		if (html == null || html == "No_Internet" || html == "Unauthorized")
 			return null;
 		// fetch latest timetable
 		String regex = "(?i)<td>1.<\\/td><td>[\\w\\d]+<\\/td><td><a[\\n\\s]+href=\"([\\w.?=&\\d]+)";
@@ -617,9 +617,17 @@ public class HttpParser {
 			Log.e("FetchUrL", "Error in http connection:" + e.toString());
 			return null;
 		}
+		
+		String resultString = result.toString();
+		String regex = "(?i)<h1>Unauthorized Access</h1>";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(resultString);
+		if(matcher.matches())
+			return "Unauthorized";
+		
 
 		Log.i("FetchUrL content: ", result.toString());
-		return result.toString();
+		return resultString;
 
 	}
 }
