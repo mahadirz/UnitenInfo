@@ -151,7 +151,7 @@ public class TimetableFragment extends Fragment {
 
 		@Override
 		protected void onPreExecute() {
-				progressDialog.setCancelable(false);
+				progressDialog.setCancelable(true);
 				progressDialog.setMessage("Please wait..");
 				progressDialog.setTitle("Refreshing the data");
 				progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

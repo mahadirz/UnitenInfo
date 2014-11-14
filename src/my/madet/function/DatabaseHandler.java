@@ -218,6 +218,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 	db.execSQL(CREATE_CLASS_NOTICES);
                 	db.execSQL(CREATE_RESULT_LIST);
                     break;
+                    
+                case 2:
+                	//upgrade to v2.1
+                	//class notices not refresh to new after new semester
+                	Log.i("DB Upgrade","Upgraded DB for v2.2 ");
+                	//add new version table
+                	//semester
+                	break;
             }
         }
 	}
