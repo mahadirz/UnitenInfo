@@ -67,6 +67,8 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		
 		setContentView(R.layout.activity_main);
 
 		if (savedInstanceState == null) {
@@ -94,7 +96,7 @@ public class MainActivity extends Activity {
 		unitenid = (EditText) findViewById(R.id.EditTextIdentifier);
 		passwEditText = (EditText) findViewById(R.id.EditTextPass);
 		//unitenid.setText("sw091740");
-		//passwEditText.setText("madet3450");
+		//passwEditText.setText("password");
 
 		loginButton = (Button) findViewById(R.id.btnLogin);
 		loginButton.setOnClickListener(new OnClickListener() {
