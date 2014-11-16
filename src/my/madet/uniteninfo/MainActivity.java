@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
 		unitenid = (EditText) findViewById(R.id.EditTextIdentifier);
 		passwEditText = (EditText) findViewById(R.id.EditTextPass);
 		//unitenid.setText("sw091740");
-		//passwEditText.setText("madet3450");
+		//passwEditText.setText("password");
 
 		loginButton = (Button) findViewById(R.id.btnLogin);
 		loginButton.setOnClickListener(new OnClickListener() {
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog.setCancelable(false);
+			progressDialog.setCancelable(true);
 			progressDialog.setMessage("Logging you in...");
 			progressDialog.setTitle("Loading");
 			progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

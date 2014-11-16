@@ -94,12 +94,7 @@ public class ClassNoticesFragment extends Fragment {
         //init list view
         listview = (ListView) rootView.findViewById(R.id.lv_classnotices);
         
-        //check if table is empty
-        if(dbHandler.getRowCount(DatabaseHandler.TABLE_CLASS_NOTICES) <= 0){
-        	_initTask = new QuerryAsyncTask();
-            _initTask.execute(rootView.getContext());
-        }
-        
+             
         
         Button refreshButton = (Button) rootView.findViewById(R.id.btn_classnotice);
         refreshButton.setOnClickListener(new OnClickListener() {
@@ -159,6 +154,13 @@ public class ClassNoticesFragment extends Fragment {
 				
 			}
 		});
+		
+		//check if table is empty
+		//put it below as v2.2 trying to fix force close
+        if(dbHandler.getRowCount(DatabaseHandler.TABLE_CLASS_NOTICES) <= 0){
+        	_initTask = new QuerryAsyncTask();
+            _initTask.execute(rootView.getContext());
+        }
         
         //load advertisement
         new LoadAdMob().execute();

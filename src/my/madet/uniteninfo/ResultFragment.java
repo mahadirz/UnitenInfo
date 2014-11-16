@@ -92,16 +92,7 @@ public class ResultFragment extends Fragment {
 		//init progress dialog
         progressDialog = new ProgressDialog(rootView.getContext());
         
-        //check if table is empty
-        if(dbHandler.getRowCount(DatabaseHandler.TABLE_RESULT) <= 0){
-        	//table is empty
-        	//so init
-			//execute async
-			_initTask = new QuerryAsyncTask();
-			_initTask.execute(rootView.getContext());
-        }
-
-		BuildData(); //build save to ResultContent & ArrayPointer
+        BuildData(); //build save to ResultContent & ArrayPointer
 
 		/*
 		HashMap<String, String[]> test = new HashMap<String, String[]>();
@@ -197,6 +188,16 @@ public class ResultFragment extends Fragment {
 				
 			}
 		});
+		
+		//check if table is empty
+		//v2.2 fix force close
+        if(dbHandler.getRowCount(DatabaseHandler.TABLE_RESULT) <= 0){
+        	//table is empty
+        	//so init
+			//execute async
+			_initTask = new QuerryAsyncTask();
+			_initTask.execute(rootView.getContext());
+        }
 		
 		new LoadAdMob().execute();
 

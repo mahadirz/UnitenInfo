@@ -95,16 +95,7 @@ public class TimetableFragment extends Fragment {
         //init progress dialog
         progressDialog = new ProgressDialog(rootView.getContext());
         
-        //check if table is empty
-        if(dbHandler.getRowCount(DatabaseHandler.TABLE_TIMETABLE) <= 0){
-        	//table is empty
-        	//so init
-			//execute async
-			_initTask = new QuerryAsyncTask();
-			_initTask.execute(rootView.getContext());
-        }
-
-		// get the listview
+        // get the listview
 		expListView = (ExpandableListView) rootView.findViewById(R.id.lvExp);
 
 		// preparing list data
@@ -141,6 +132,16 @@ public class TimetableFragment extends Fragment {
 				_initTask.execute(v.getContext());
 			}
 		});
+		
+		//check if table is empty
+		//v2.2 fix force close
+        if(dbHandler.getRowCount(DatabaseHandler.TABLE_TIMETABLE) <= 0){
+        	//table is empty
+        	//so init
+			//execute async
+			_initTask = new QuerryAsyncTask();
+			_initTask.execute(rootView.getContext());
+        }
 
 		return rootView;
 	}

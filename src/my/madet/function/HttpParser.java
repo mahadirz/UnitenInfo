@@ -56,6 +56,7 @@ import org.apache.http.auth.NTCredentials;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
 
@@ -90,7 +91,9 @@ public class HttpParser {
 		 * array 0: id array 1: name array n:
 		 * status,program,campus,advisor,phone,email array 8: password
 		 */
-		String regex = "Student ID:<\\/TD><TD><B>([\\w\\d]+)[\\s\\S]+Name:<\\/TD><TD>([\\w\\s.,/']+)[\\s\\S]+Student Status:<\\/TD><TD>([\\w]+)[\\s\\S]+Program:<\\/TD><TD>([\\w\\s().,/]+)[\\s\\S]+Campus:<\\/TD><TD>([\\w\\s]+)[\\s\\S]+Advisor:<\\/TD><TD>([\\w\\s,./]+)[\\s\\S]+Phone:<\\/TD><TD>([\\d\\+\\s-]+)<\\/TD><\\/TR>[\\s\\S]+EMAIL\" VALUE=\"([\\S]+)\"";
+		//String regex = "Student ID:<\\/TD><TD><B>([\\w\\d]+)[\\s\\S]+Name:<\\/TD><TD>([\\w\\s.,/']+)[\\s\\S]+Student Status:<\\/TD><TD>([\\w]+)[\\s\\S]+Program:<\\/TD><TD>([\\w\\s().,/]+)[\\s\\S]+Campus:<\\/TD><TD>([\\w\\s]+)[\\s\\S]+Advisor:<\\/TD><TD>([\\w\\s,./]+)[\\s\\S]+Phone:<\\/TD><TD>([\\d\\+\\s-]+)<\\/TD><\\/TR>[\\s\\S]+EMAIL\" VALUE=\"([\\S]+)\"";
+		//http://www.freeformatter.com/java-dotnet-escape.html#ad-output
+		String regex = "Student ID:<\\/TD><TD><B>([\\w\\d]+?)\\s*?<\\/B>[\\s\\S]+?Name:<\\/TD><TD>([\\S\\s]+?)<\\/TD>[\\s\\S]+?Student Status:<\\/TD><TD>([\\S\\s]+?)<\\/TD>[\\s\\S]+?Program:<\\/TD><TD>([\\S\\s]+?)<\\/TD>[\\s\\S]+?Campus:<\\/TD><TD>([\\S\\s]+?)<\\/TD>[\\s\\S]+?Advisor:<\\/TD><TD>([\\S\\s]+?)<\\/TD>[\\s\\S]+?NAME=\"CPHONE\"[\\s\\S]+?VALUE=\"([\\S\\s]+?)\">[\\s\\S]+?NAME=\"EMAIL\" VALUE=\"([\\S\\s]+?)\"";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(html);
 		if (matcher.find()) {

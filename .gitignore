@@ -1,5 +1,7 @@
 #Ignore gen folder
 gen/
+gen/my/madet/uniteninfo/
+gen/android/support/v7/appcompat
 
 #Ignore bin
 bin/
