@@ -39,6 +39,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import my.madet.function.DatabaseHandler;
+import my.madet.function.FunctionLibrary;
 import my.madet.function.HttpParser;
 import android.app.Fragment;
 import android.app.ProgressDialog;
@@ -71,6 +72,10 @@ public class HomeFragment extends Fragment {
 			Bundle savedInstanceState) {
 
 		rootView = inflater.inflate(R.layout.fragment_home, container, false);
+		
+		//perform auto update checking
+        CheckUpdateDialog checkUpdateDialog = new CheckUpdateDialog(getActivity());
+        checkUpdateDialog.checkUpdate();
 
 		listview = (ListView) rootView.findViewById(R.id.lv_biodata);
 
@@ -103,6 +108,11 @@ public class HomeFragment extends Fragment {
 		adapter = new SimpleAdapter(rootView.getContext(), list2,
 				android.R.layout.simple_list_item_2, from, to);
 		listview.setAdapter(adapter);
+		
+		//dbHandler.createSubjectList();
+		//FunctionLibrary functionLibrary = new FunctionLibrary(getActivity());
+		//functionLibrary.readCSV("subjectList.csv");
+		//dbHandler.insertSubjectList(functionLibrary.readCSV("subjectList.csv"));
 
 		return rootView;
 	}
@@ -112,7 +122,7 @@ public class HomeFragment extends Fragment {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog.setCancelable(false);
+			progressDialog.setCancelable(true);
 			progressDialog.setMessage("Please wait..");
 			progressDialog.setTitle("Refreshing the data");
 			progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

@@ -79,14 +79,7 @@ public class ScorunFragment extends Fragment {
       //init progress dialog
         progressDialog = new ProgressDialog(rootView.getContext());
         
-        //check if table is empty
-        if(dbHandler.getRowCount(DatabaseHandler.TABLE_SCORUN) <= 0){
-        	//table is empty
-        	//so init
-			//execute async
-			_initTask = new QuerryAsyncTask();
-			_initTask.execute(rootView.getContext());
-        }
+      //init task execute replaced to the bottom of oncreate
         
         Button refreshB = (Button) rootView.findViewById(R.id.btn_scorun_refresh);
         refreshB.setOnClickListener(new View.OnClickListener() {
@@ -108,6 +101,15 @@ public class ScorunFragment extends Fragment {
         adapter = new SimpleAdapter(rootView.getContext(), list2,android.R.layout.simple_list_item_2, from, to);
         listview.setAdapter(adapter);
         
+      //check if table is empty
+        if(dbHandler.getRowCount(DatabaseHandler.TABLE_SCORUN) <= 0){
+        	//table is empty
+        	//so init
+			//execute async
+			_initTask = new QuerryAsyncTask();
+			_initTask.execute(rootView.getContext());
+        }
+        
         new LoadAdMob().execute();
 
 		return rootView;
@@ -117,7 +119,7 @@ public class ScorunFragment extends Fragment {
 
 				@Override
 				protected void onPreExecute() {
-					progressDialog.setCancelable(false);
+					progressDialog.setCancelable(true);
 					progressDialog.setMessage("Please wait..");
 					progressDialog.setTitle("Refreshing the data");
 					progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

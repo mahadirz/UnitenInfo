@@ -25,7 +25,8 @@
         <item >Scorun</item>
         <item >Time Table</item>
         <item >Full Time Table</item>
-        <item >Event Checkin</item>
+        <item >OpenVPN</item>
+        <item >Preferences</item>
         <item >About</item>
     </string-array>
      
@@ -39,11 +40,25 @@
         <item>@drawable/scorun</item>
         <item>@drawable/timetable</item>
         <item>@drawable/calendar_link</item>
-        <item>@drawable/wi_fi_zone</item>
+        <item>@drawable/ovpntech_key</item>
+        <item>@drawable/preference</item>
         <item>@drawable/about</item>
     </array>
      
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
+    
+    <style name="btnStyleOrange" parent="@android:style/Widget.Button">
+       <item name="android:textSize">15sp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textColor">#FFFFFF</item>
+       <item name="android:gravity">center</item>
+       <item name="android:shadowColor">#000000</item>
+       <item name="android:shadowDx">1</item>
+       <item name="android:shadowDy">1</item>
+       <item name="android:shadowRadius">0.6</item>
+       <item name="android:background">@drawable/button_orange</item>
+       <item name="android:padding">10dip</item>
+   </style>
 
 </resources>

@@ -63,6 +63,8 @@ public class MainActivity extends Activity {
 	private Button loginButton;
 	private QuerryAsyncTask _initTask;
 	private FunctionLibrary flib;
+	
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +80,7 @@ public class MainActivity extends Activity {
 		}
 
 		// goto main home if already logged in
-		flib = new FunctionLibrary();
+		flib = new FunctionLibrary(this);
 		if (flib.isUserLoggedIn(getApplicationContext())) {
 			Intent i = new Intent(getApplicationContext(), MainHome.class);
 			startActivity(i);
@@ -124,7 +126,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog.setCancelable(false);
+			progressDialog.setCancelable(true);
 			progressDialog.setMessage("Logging you in...");
 			progressDialog.setTitle("Loading");
 			progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -204,5 +206,7 @@ public class MainActivity extends Activity {
 			return rootView;
 		}
 	}
+	
+
 
 }

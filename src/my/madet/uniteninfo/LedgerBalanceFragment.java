@@ -87,9 +87,12 @@ public class LedgerBalanceFragment extends Fragment {
 			_initTask = new QuerryAsyncTask();
 			_initTask.execute(rootView.getContext());
         }
+        else{
+        	//try to fix force close
+        	//11-15 18:21:01.623: E/AndroidRuntime(5526): Caused by: java.lang.IllegalStateException: Cannot perform this operation because the connection pool has been closed.
+        	UpdateUi();
+        }
         
-        UpdateUi();
-		
 
 		Button refreshB = (Button) rootView
 				.findViewById(R.id.btn_ledger_refresh);
@@ -151,7 +154,7 @@ public class LedgerBalanceFragment extends Fragment {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog.setCancelable(false);
+			progressDialog.setCancelable(true);
 			progressDialog.setMessage("Please wait..");
 			progressDialog.setTitle("Refreshing the data");
 			progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

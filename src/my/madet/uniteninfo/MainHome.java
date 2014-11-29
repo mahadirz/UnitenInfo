@@ -37,18 +37,28 @@ package my.madet.uniteninfo;
 import my.madet.adapter.NavDrawerListAdapter;
 import my.madet.function.DatabaseHandler;
 import my.madet.function.FunctionLibrary;
+import my.madet.function.HttpHandler;
+import my.madet.function.MyPreferences;
 import my.madet.model.NavDrawerItem;
 
 import java.util.ArrayList;
 
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpUriRequest;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
@@ -65,7 +75,8 @@ public class MainHome extends Activity {
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
 	
-	private SharedPreferences sharedPref;
+	private MyPreferences myPreferences;
+	
 
 	// nav drawer title
 	//private CharSequence mDrawerTitle;
@@ -79,6 +90,8 @@ public class MainHome extends Activity {
 
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private NavDrawerListAdapter adapter;
+	
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +106,7 @@ public class MainHome extends Activity {
 		String totalClassNotices = Integer.toString(dbhandler.getRowCount(DatabaseHandler.TABLE_CLASS_NOTICES));
 
 		//init shared preference
-		sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+		myPreferences = new MyPreferences(this);
 
 		//mTitle = mDrawerTitle = getTitle();
 
@@ -126,11 +139,14 @@ public class MainHome extends Activity {
 		//html timetable
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1)));
 		
-		//event checkin
+		//openvpn
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(7, -1)));
 		
-		//about
+		//config
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons.getResourceId(8, -1)));
+		
+		//about
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons.getResourceId(9, -1)));
 
 		// Recycle the typed array
 		navMenuIcons.recycle();
@@ -167,7 +183,7 @@ public class MainHome extends Activity {
 
 		if (savedInstanceState == null) {
 			// on first time display view for first nav item
-			int pos = sharedPref.getInt("drawerPosition", 0);
+			int pos = myPreferences.getIntegerPreference(MyPreferences.DRAWER_INDEX_POSITION);
 			displayView(pos);
 		}
 	}
@@ -181,9 +197,7 @@ public class MainHome extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
 			// display view for selected nav drawer item
-			SharedPreferences.Editor editor = sharedPref.edit();
-			editor.putInt("drawerPosition", position);
-			editor.commit();
+			myPreferences.setIntegerPreference(MyPreferences.DRAWER_INDEX_POSITION, position);
 			displayView(position);
 		}
 	}
@@ -205,7 +219,7 @@ public class MainHome extends Activity {
 		case R.id.action_settings:{
 			Toast.makeText(getApplicationContext(), "Logging out..", Toast.LENGTH_SHORT).show();
 			//save sql to file
-			FunctionLibrary flib = new FunctionLibrary();
+			FunctionLibrary flib = new FunctionLibrary(this);
 			flib.logoutUser(getApplicationContext());
 			Intent i = new Intent(getApplicationContext(),MainActivity.class);
 			startActivity(i);
@@ -256,18 +270,23 @@ public class MainHome extends Activity {
 			fragment = new TimetableFragmentWeb();
 			break;
 		case 7:
-			fragment = new EventCheckIn();
+			fragment = new OpenVPN();
 			break;
 		case 8:
+			fragment = new PreferenceFragment();
+			break;
+		case 9:
 			fragment = new AboutFragment();
 			break;
 
 		default:
 			break;
 		}
-
+		
+		
 		if (fragment != null) {
 			FragmentManager fragmentManager = getFragmentManager();
+						
 			fragmentManager.beginTransaction()
 					.replace(R.id.frame_container, fragment).commit();
 
@@ -306,6 +325,31 @@ public class MainHome extends Activity {
 		super.onConfigurationChanged(newConfig);
 		// Pass any configuration change to the drawer toggls
 		mDrawerToggle.onConfigurationChanged(newConfig);
+	}
+	
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		Log.d("onActivityResult", "onActivityResult in main Home "+requestCode);
+		Log.d("onActivityResult", "onActivityResult in main Home "+data.getIntExtra("RESPONSE_CODE", 0));
+		super.onActivityResult(requestCode, resultCode, data);
+
+	    FragmentManager fragmentManager = getFragmentManager();
+	    Fragment fragment = fragmentManager.findFragmentById(R.id.frame_container);       
+	    if (fragment != null)
+	    {
+	        fragment.onActivityResult(requestCode, resultCode,data);
+	    } 
+	}
+	
+	@Override
+	public void onDestroy(){
+		super.onDestroy();
+		FragmentManager fragmentManager = getFragmentManager();
+	    Fragment fragment = fragmentManager.findFragmentById(R.id.frame_container);       
+	    if (fragment != null)
+	    {
+	        fragment.onDestroy();
+	    } 
 	}
 
 }

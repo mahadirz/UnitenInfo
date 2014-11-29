@@ -33,19 +33,34 @@
  */
 package my.madet.function;
 
+
 import java.io.IOException;
 import java.io.InputStream;
-
+import java.util.Scanner;
+import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.util.Log;
 
 public class FunctionLibrary {
+	
+	private SharedPreferences sharedPref;
+	private Context  context;
+	private MyPreferences myPreferences;
+	
+	public FunctionLibrary(Activity a){
+		//init shared preference
+		sharedPref = a.getPreferences(Context.MODE_PRIVATE);
+		context = a.getApplicationContext();
+		myPreferences = new MyPreferences(a);
+	}
 	
 	/**
 	 * Function get Login status
 	 * */
 	public boolean isUserLoggedIn(Context context){
 		DatabaseHandler db = new DatabaseHandler(context);
-		int count = db.getRowCount(db.TABLE_BIODATA());
+		int count = db.getRowCount(DatabaseHandler.TABLE_BIODATA);
 		if(count > 0){
 			// user logged in
 			return true;
@@ -59,19 +74,70 @@ public class FunctionLibrary {
 	 * */
 	public boolean logoutUser(Context context){
 		DatabaseHandler db = new DatabaseHandler(context);
-		db.resetTables(db.TABLE_BIODATA());
-		db.resetTables(db.TABLE_LEDGER_BALANCE());
-		db.resetTables(db.TABLE_RESULT());
-		db.resetTables(db.TABLE_SCORUN());
-		db.resetTables(db.TABLE_TIMETABLE());
+		db.resetTables(DatabaseHandler.TABLE_BIODATA);
+		db.resetTables(DatabaseHandler.TABLE_LEDGER_BALANCE);
+		db.resetTables(DatabaseHandler.TABLE_RESULT);
+		db.resetTables(DatabaseHandler.TABLE_SCORUN);
+		db.resetTables(DatabaseHandler.TABLE_TIMETABLE);
+		db.resetTables(DatabaseHandler.TABLE_CLASS_NOTICES);
+		//reset class notices
+		//reset drawer position to 0
+		SharedPreferences.Editor editor = sharedPref.edit();
+		editor.putInt("drawerPosition", 0);
+		editor.putString("purchaseData", "");
+	    editor.putString("dataSignature", "");
+	    editor.putString("devPayloadId", "");
+	    editor.putString("myvpn_user_name", "");
+	    editor.putString("purchaseData", "");
+		editor.commit();
+		
+		myPreferences.setIntegerPreference(MyPreferences.DRAWER_INDEX_POSITION, 0);
+		
 		return true;
 	}
 	
-	public String LoadData(String inFile, Context c) {
+	public String getSubjectName(String subjectCode){
+		subjectCode = subjectCode.toUpperCase();
+		Scanner scan;
+		String s;
+	    String returnString = null;
+	    Long startLong = System.currentTimeMillis();
+	    
+	    if(!myPreferences.getStringPreference(subjectCode).equals("")){
+	    	//get hit,no need to search, 0 miliseconds
+	    	return myPreferences.getStringPreference(subjectCode);
+	    }
+	    
+		try {
+			scan = new Scanner(context.getAssets().open("subjectList.csv"));
+			
+
+		   while (scan.hasNextLine()) 
+		   {
+		    s = scan.nextLine();
+		    String[] csv = s.split(",");
+		    if(csv[1].matches("\""+subjectCode.toUpperCase()+"\"")){
+		    	returnString = csv[2].substring(1, (csv[2].length()-1));
+		    	//cache it to sharedPref for speed
+		    	myPreferences.setStringPreference(subjectCode, returnString);
+		    }
+		   }
+		    
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	   Log.d("getSubjectName","Total searching time: "+ ((System.currentTimeMillis())-startLong)+" miliseconds"); 
+	   return returnString;
+	}
+	
+
+	
+	public String LoadData(String inFile) {
 		String tContents = "";
 
         try {
-        	InputStream stream = c.getAssets().open(inFile);
+        	InputStream stream = context.getAssets().open(inFile);
             int size = stream.available();
             byte[] buffer = new byte[size];
             stream.read(buffer);

@@ -35,6 +35,7 @@
 package my.madet.uniteninfo;
 
 import java.util.HashMap;
+
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -43,13 +44,17 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+
 import java.io.File;
+
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -85,6 +90,10 @@ public class TimetableFragmentWeb extends Fragment{
 				
 		rootView = inflater.inflate(R.layout.fragment_timetableweb,container, false);
 		
+		//perform auto update checking
+        CheckUpdateDialog checkUpdateDialog = new CheckUpdateDialog(getActivity());
+        checkUpdateDialog.checkUpdate();
+		
 		//init database handler
         dbHandler = new DatabaseHandler(rootView.getContext());
 		
@@ -97,9 +106,7 @@ public class TimetableFragmentWeb extends Fragment{
 		//init progress dialog
         progressDialog = new ProgressDialog(rootView.getContext());
         
-        
-        
-	    
+
 	    if(fileCache.isHtmlTimeTableExist()==false){
 	    	_initTask = new QuerryAsyncTask();
 	    	_initTask.execute(getActivity());
@@ -246,6 +253,26 @@ public class TimetableFragmentWeb extends Fragment{
 				protected void onPostExecute(String d ) {
 					Log.i("onPostExecute","Entered the onPostExecute");
 					progressDialog.hide();
+					
+					Display display = getActivity().getWindowManager().getDefaultDisplay();
+				    DisplayMetrics metrics = new DisplayMetrics();
+				    display.getMetrics(metrics);
+
+				    //Log.i("TimetableFragment", "density :" +  metrics.density);
+
+				    // density interms of dpi
+				    //Log.i("TimetableFragment", "D density :" +  metrics.densityDpi);
+
+				    // horizontal pixel resolution
+				    //Log.i("TimetableFragment", "width pix :" +  metrics.widthPixels);
+
+				     // actual horizontal dpi
+				    //Log.i("TimetableFragment", "xdpi :" +  metrics.xdpi);
+
+				    // actual vertical dpi
+				    //Log.i("TimetableFragment", "ydpi :" +  metrics.ydpi);
+				    
+				    htmlTimetableString = htmlTimetableString.replaceAll("<HEAD>", "<HEAD><meta name=\"viewport\" content=\"target-densitydpi="+metrics.ydpi+"\" \\/>");
 
 					if(htmlTimetableString != null){
 						fileCache.saveHtmlTimeTable(htmlTimetableString);

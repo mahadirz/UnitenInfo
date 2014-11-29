@@ -1,7 +1,9 @@
-#################
-## Eclipse
-#################
+#Ignore gen folder
+gen/
+gen/my/madet/uniteninfo/
+gen/android/support/v7/appcompat
 
+<<<<<<< HEAD
 *.pydevproject
 .project
 .metadata
@@ -214,3 +216,7 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 gen/com/android/vending/billing/IInAppBillingService.java
+=======
+#Ignore bin
+bin/
+>>>>>>> 2.2

@@ -45,12 +45,17 @@ import com.google.android.gms.ads.AdView;
 import my.madet.adapter.ExamResultListAdapter;
 import my.madet.function.DatabaseHandler;
 import my.madet.function.HttpParser;
+import my.madet.function.MyPreferences;
 import android.os.AsyncTask;
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DialogFragment;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,6 +65,7 @@ import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.os.Bundle;
@@ -79,29 +85,93 @@ public class ResultFragment extends Fragment {
 
 	private HashMap<String, String[]> ResultContent;
 	private String[] ArrayPointer;
+	
+	int mStackLevel = 0;
+	public static final int DIALOG_FRAGMENT_PASSWORD = 1;
+	DialogFragment dialogFrag;
+	
+	//to store if user optin for password protected
+	private MyPreferences myPreference;
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+
+	    if (savedInstanceState != null) {
+	        mStackLevel = savedInstanceState.getInt("level");
+	    }
+	    
+	    //init shared preference
+	    myPreference = new MyPreferences(getActivity());
+	    
+	    //init db handler
+	  	dbHandler = new DatabaseHandler(getActivity());
+	}
+	
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+	    super.onSaveInstanceState(outState);
+	    outState.putInt("level", mStackLevel);
+	}
+	
+	void showDialog(int type) {
+
+	    mStackLevel++;
+
+	    FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
+	    Fragment prev = getActivity().getFragmentManager().findFragmentByTag("dialog");
+	    if (prev != null) {
+	        ft.remove(prev);
+	    }
+	    ft.addToBackStack(null);
+
+	    switch (type) {
+
+	        case DIALOG_FRAGMENT_PASSWORD:
+
+	            dialogFrag = PasswordDialogFragment.newInstance(123);
+	            dialogFrag.setTargetFragment(this, DIALOG_FRAGMENT_PASSWORD);
+	            dialogFrag.show(getFragmentManager().beginTransaction(), "dialog");
+	            
+
+	            break;
+	    }
+	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+	        switch(requestCode) {
+	            case DIALOG_FRAGMENT_PASSWORD:
 
-		rootView = inflater.inflate(R.layout.fragment_result, container, false);
-		
-		//init db handler
-		dbHandler = new DatabaseHandler(getActivity());
-		
+	                if (resultCode == Activity.RESULT_OK) {
+	                    // After Ok code.
+	                	EditText editTextPassword = (EditText) dialogFrag.getDialog().findViewById(R.id.password);
+	                	String passwordEnteredString = editTextPassword.getText().toString();
+	                	Log.d("onActivityResult", "Password entered:  "+passwordEnteredString);
+	                	HashMap<String, String> bioHashMap = new HashMap<String, String>();
+	        			bioHashMap = dbHandler.getBiodata();
+	        			if(bioHashMap.get(DatabaseHandler.BIODATA_KEY_PASSWORD).equalsIgnoreCase(passwordEnteredString)){
+	        				showMyView();
+	        			}
+	        			else {
+							Toast.makeText(getActivity(), "Invalid Password!", Toast.LENGTH_LONG).show();
+						}
+	                	
+	                } else if (resultCode == Activity.RESULT_CANCELED){
+	                    // After Cancel code.
+	                	Log.d("onActivityResult", "Cancel");
+	                }
+
+	                break;
+	        }
+	 }
+	
+	private void showMyView(){
+
 		//init progress dialog
         progressDialog = new ProgressDialog(rootView.getContext());
         
-        //check if table is empty
-        if(dbHandler.getRowCount(DatabaseHandler.TABLE_RESULT) <= 0){
-        	//table is empty
-        	//so init
-			//execute async
-			_initTask = new QuerryAsyncTask();
-			_initTask.execute(rootView.getContext());
-        }
-
-		BuildData(); //build save to ResultContent & ArrayPointer
+        BuildData(); //build save to ResultContent & ArrayPointer
 
 		/*
 		HashMap<String, String[]> test = new HashMap<String, String[]>();
@@ -165,8 +235,8 @@ public class ResultFragment extends Fragment {
 				
 				Log.i("Rows string",rows.toString());
 				
-				FunctionLibrary functionlib = new FunctionLibrary();				
-				String htmlTemplateString = functionlib.LoadData("templateresult.html",rootView.getContext());
+				FunctionLibrary functionlib = new FunctionLibrary(getActivity());				
+				String htmlTemplateString = functionlib.LoadData("templateresult.html");
 				
 				//replace template
 				htmlTemplateString = htmlTemplateString.replaceFirst("%REPLACE_ROW%",rows.toString() );
@@ -198,8 +268,35 @@ public class ResultFragment extends Fragment {
 			}
 		});
 		
-		new LoadAdMob().execute();
+		//check if table is empty
+		//v2.2 fix force close
+        if(dbHandler.getRowCount(DatabaseHandler.TABLE_RESULT) <= 0){
+        	//table is empty
+        	//so init
+			//execute async
+			_initTask = new QuerryAsyncTask();
+			_initTask.execute(rootView.getContext());
+        }
+		
+	}
+	
 
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+
+		rootView = inflater.inflate(R.layout.fragment_result, container, false);
+		
+		//if password protected is enable then show dialog
+		if(myPreference.getBooleanPreference(MyPreferences.RESULT_PASSWORD_PROTECTED)){
+			showDialog(DIALOG_FRAGMENT_PASSWORD);
+		}
+		else{			
+			showMyView();
+		}
+		
+		new LoadAdMob().execute();
+		
 		return rootView;
 	}
 
@@ -248,7 +345,7 @@ public class ResultFragment extends Fragment {
 
 		@Override
 		protected void onPreExecute() {
-			progressDialog.setCancelable(false);
+			progressDialog.setCancelable(true);
 			progressDialog.setMessage("Please wait..");
 			progressDialog.setTitle("Refreshing the data");
 			progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

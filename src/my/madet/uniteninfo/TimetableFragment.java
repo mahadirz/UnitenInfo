@@ -58,6 +58,7 @@ import android.content.Context;
 import android.widget.Toast;
 import my.madet.adapter.MyExpandableListAdapter;
 import my.madet.function.DatabaseHandler;
+import my.madet.function.FunctionLibrary;
 import my.madet.function.HttpParser;
 import my.madet.function.TimeTableStruct;
 
@@ -77,6 +78,8 @@ public class TimetableFragment extends Fragment {
 	//database handler
 	private DatabaseHandler dbHandler;
 	private QuerryAsyncTask _initTask;
+	
+	private FunctionLibrary functionLibrary;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -87,7 +90,14 @@ public class TimetableFragment extends Fragment {
 		rootView = inflater.inflate(R.layout.fragment_timetable,
 				container, false);
 		
+		//perform auto update checking
+        CheckUpdateDialog checkUpdateDialog = new CheckUpdateDialog(getActivity());
+        checkUpdateDialog.checkUpdate();
+		
 		new LoadAdMob().execute();
+		
+		//init functionLibrary
+		functionLibrary = new FunctionLibrary(getActivity());
 		
 		//init database handler
         dbHandler = new DatabaseHandler(rootView.getContext());
@@ -95,16 +105,7 @@ public class TimetableFragment extends Fragment {
         //init progress dialog
         progressDialog = new ProgressDialog(rootView.getContext());
         
-        //check if table is empty
-        if(dbHandler.getRowCount(DatabaseHandler.TABLE_TIMETABLE) <= 0){
-        	//table is empty
-        	//so init
-			//execute async
-			_initTask = new QuerryAsyncTask();
-			_initTask.execute(rootView.getContext());
-        }
-
-		// get the listview
+        // get the listview
 		expListView = (ExpandableListView) rootView.findViewById(R.id.lvExp);
 
 		// preparing list data
@@ -141,6 +142,16 @@ public class TimetableFragment extends Fragment {
 				_initTask.execute(v.getContext());
 			}
 		});
+		
+		//check if table is empty
+		//v2.2 fix force close
+        if(dbHandler.getRowCount(DatabaseHandler.TABLE_TIMETABLE) <= 0){
+        	//table is empty
+        	//so init
+			//execute async
+			_initTask = new QuerryAsyncTask();
+			_initTask.execute(rootView.getContext());
+        }
 
 		return rootView;
 	}
@@ -151,7 +162,7 @@ public class TimetableFragment extends Fragment {
 
 		@Override
 		protected void onPreExecute() {
-				progressDialog.setCancelable(false);
+				progressDialog.setCancelable(true);
 				progressDialog.setMessage("Please wait..");
 				progressDialog.setTitle("Refreshing the data");
 				progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -246,28 +257,30 @@ public class TimetableFragment extends Fragment {
 		List<String> Saturday = new ArrayList<String>();
 		List<String> Sunday = new ArrayList<String>();
 		
+		
+		
 		//assign subject, time n location
 		for(TimeTableStruct a : timeTableStructs){
 			if(a.getDay().compareToIgnoreCase("monday") == 0){
-				Monday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Monday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 			else if(a.getDay().compareToIgnoreCase("tuesday") == 0){
-				Tuesday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Tuesday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 			else if(a.getDay().compareToIgnoreCase("wednesday") == 0){
-				Wednesday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Wednesday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 			else if(a.getDay().compareToIgnoreCase("thursday") == 0){
-				Thursday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Thursday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 			else if(a.getDay().compareToIgnoreCase("friday") == 0){
-				Friday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Friday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 			else if(a.getDay().compareToIgnoreCase("saturday") == 0){
-				Saturday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Saturday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 			else if(a.getDay().compareToIgnoreCase("sunday") == 0){
-				Sunday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+a.getSubject()+ "\n"+a.getLocation());
+				Sunday.add(a.getStartTime()+" - "+a.getEndTime()+ "\n"+functionLibrary.getSubjectName(a.getSubject())+"\n"+a.getSubject()+ "\n"+a.getLocation());
 			}
 		}
 
