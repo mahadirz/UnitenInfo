@@ -49,7 +49,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 	// All Static variables
 	// Database Version
-	private static final int DATABASE_VERSION = 2;
+	private static final int DATABASE_VERSION = 3;
 
 	// Database Name
 	private static final String DATABASE_NAME = "studentinfo";
@@ -68,6 +68,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	public static final String TABLE_TIMETABLE = "timetable";
 	//result list subject
 	public static final String TABLE_RESULT_LIST = "resultlist";
+	
 
 	// biodate table column names
 	public static final String BIODATA_KEY_FULLNAME = "fullname";
@@ -223,12 +224,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 	//upgrade to v2.1
                 	//class notices not refresh to new after new semester
                 	Log.i("DB Upgrade","Upgraded DB for v2.2 ");
-                	//add new version table
-                	//semester
+                	
+                	//reset class notices
+            		db.delete(TABLE_CLASS_NOTICES, null, null);
+                	
                 	break;
             }
         }
 	}
+
 	
 	/**
 	 * 
@@ -455,7 +459,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 			else
 				values.put(LEDGER_BALANCE_STATUS, "You are not blocked");
 			
-			if (db.insert(TABLE_LEDGER_BALANCE(), null, values) > 0)
+			if (db.insert(TABLE_LEDGER_BALANCE, null, values) > 0)
 				Log.i("addLedgerBalance", "added Balance " + total);
 
 			db.close();
@@ -611,28 +615,5 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		db.close();
 	}
 
-	public String TABLE_BIODATA() {
-		return TABLE_BIODATA;
-	}
-
-	public String TABLE_CLASS_NOTICES() {
-		return TABLE_CLASS_NOTICES;
-	}
-
-	public String TABLE_LEDGER_BALANCE() {
-		return TABLE_LEDGER_BALANCE;
-	}
-
-	public String TABLE_RESULT() {
-		return TABLE_RESULT;
-	}
-
-	public String TABLE_SCORUN() {
-		return TABLE_SCORUN;
-	}
-
-	public String TABLE_TIMETABLE() {
-		return TABLE_TIMETABLE;
-	}
 
 }

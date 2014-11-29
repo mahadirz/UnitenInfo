@@ -40,10 +40,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 
 import my.madet.function.DatabaseHandler;
+import my.madet.function.FunctionLibrary;
 import my.madet.function.HttpParser;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -76,6 +76,7 @@ public class ClassNoticesFragment extends Fragment {
 	private View rootView;
 	private ListView listview;
 	private SimpleAdapter adapter;
+	private FunctionLibrary functionLibrary;
 	
 	private ArrayList<HashMap<String, String>> classNoticeArrayList;
 	
@@ -94,7 +95,13 @@ public class ClassNoticesFragment extends Fragment {
         //init list view
         listview = (ListView) rootView.findViewById(R.id.lv_classnotices);
         
-             
+        //init functionLibrary
+        functionLibrary = new FunctionLibrary(getActivity());
+        
+                
+        //perform auto update checking
+        CheckUpdateDialog checkUpdateDialog = new CheckUpdateDialog(getActivity());
+        checkUpdateDialog.checkUpdate();
         
         Button refreshButton = (Button) rootView.findViewById(R.id.btn_classnotice);
         refreshButton.setOnClickListener(new OnClickListener() {
@@ -112,7 +119,12 @@ public class ClassNoticesFragment extends Fragment {
         classNoticeArrayList = dbHandler.getClassNotices();
         for(int i=0; i< classNoticeArrayList.size(); i++){
         	HashMap<String, String> item = new HashMap<String, String>();
-        	item.put("title", classNoticeArrayList.get(i).get(DatabaseHandler.CLASS_NOTICES_TITLE));
+        	String subjectCode = classNoticeArrayList.get(i).get(DatabaseHandler.CLASS_NOTICES_TITLE);
+        	String subjectName = functionLibrary.getSubjectName(subjectCode.replaceAll("(\\s)?\\([\\s\\S]+?\\)", ""));
+        	if(subjectName != null)
+        		item.put("title", subjectName);
+        	else
+        		item.put("title", subjectCode);
         	item.put("subtitle", classNoticeArrayList.get(i).get(DatabaseHandler.CLASS_NOTICES_DATETIME));
         	list.add(item);
         }
@@ -215,7 +227,12 @@ public class ClassNoticesFragment extends Fragment {
 			        classNoticeArrayList = dbHandler.getClassNotices();
 			        for(int i=0; i< classNoticeArrayList.size(); i++){
 			        	HashMap<String, String> item = new HashMap<String, String>();
-			        	item.put("title", classNoticeArrayList.get(i).get(DatabaseHandler.CLASS_NOTICES_TITLE));
+			        	String subjectCode = classNoticeArrayList.get(i).get(DatabaseHandler.CLASS_NOTICES_TITLE);
+			        	String subjectName = functionLibrary.getSubjectName(subjectCode.replaceAll("(\\s)?\\([\\s\\S]+?\\)", ""));
+			        	if(subjectName != null)
+			        		item.put("title", subjectName);
+			        	else
+			        		item.put("title", subjectCode);
 			        	item.put("subtitle", classNoticeArrayList.get(i).get(DatabaseHandler.CLASS_NOTICES_DATETIME));
 			        	list.add(item);
 			        }

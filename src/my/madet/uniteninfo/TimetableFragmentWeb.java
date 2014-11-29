@@ -90,6 +90,10 @@ public class TimetableFragmentWeb extends Fragment{
 				
 		rootView = inflater.inflate(R.layout.fragment_timetableweb,container, false);
 		
+		//perform auto update checking
+        CheckUpdateDialog checkUpdateDialog = new CheckUpdateDialog(getActivity());
+        checkUpdateDialog.checkUpdate();
+		
 		//init database handler
         dbHandler = new DatabaseHandler(rootView.getContext());
 		
