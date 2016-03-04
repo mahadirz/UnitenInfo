@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gcmsender.gcmsender">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gcmsender/build/libs/gcmsender.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

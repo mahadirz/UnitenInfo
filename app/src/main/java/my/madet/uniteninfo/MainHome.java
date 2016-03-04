@@ -34,31 +34,12 @@
 
 package my.madet.uniteninfo;
 
-import my.madet.adapter.NavDrawerListAdapter;
-import my.madet.function.DatabaseHandler;
-import my.madet.function.FunctionLibrary;
-import my.madet.function.HttpHandler;
-import my.madet.function.MyPreferences;
-import my.madet.model.NavDrawerItem;
-
-import java.util.ArrayList;
-
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
@@ -72,6 +53,14 @@ import android.widget.Toast;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+
+import java.util.ArrayList;
+
+import my.madet.adapter.NavDrawerListAdapter;
+import my.madet.function.DatabaseHandler;
+import my.madet.function.FunctionLibrary;
+import my.madet.function.MyPreferences;
+import my.madet.model.NavDrawerItem;
 
 public class MainHome extends Activity {
 	private DrawerLayout mDrawerLayout;
@@ -292,13 +281,10 @@ public class MainHome extends Activity {
             screenName = "Timetable Web";
 			break;
 		case 7:
-			fragment = new OpenVPN();
-			break;
-		case 8:
 			fragment = new PreferenceFragment();
             screenName = "Preference";
 			break;
-		case 9:
+		case 8:
 			fragment = new AboutFragment();
             screenName = "About";
 			break;

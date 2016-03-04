@@ -6,132 +6,52 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="RegIntentService" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="HttpsClient" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62b2779-679b-4e2f-a015-6c17a816a76d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\assets\about.htm" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\assets\subjectList.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\assets\templateresult.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\gen\android\support\v7\appcompat\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\gen\my\madet\uniteninfo\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\libs\jcifs-1.3.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\lint.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\about.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\calendar_group.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\calendar_link.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\exclamation.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\ic_drawer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\ic_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\ic_launcher1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\ledger.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\medal_award_bronze.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\medal_award_gold.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\medal_award_silver.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\myvpn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\notices.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\ovpntech_key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\preference.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\refresh_white_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\repeat_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\result.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\scorun.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\share.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\tick.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\timetable.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-hdpi\wi_fi_zone.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\button_orange.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\counter_bg.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\custom_btn_blue.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\custom_btn_orange.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\custom_btn_shakespeare.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\custom_header_blue.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\custom_header_red.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\image_bg.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\list_item_bg_normal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\list_item_bg_pressed.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\drawable\list_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\dialog_signin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\drawer_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\footer_repeat.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_about.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_class_notices.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_home.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_ledgerbalance.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_openvpn.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_preferences.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_result.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_scorun.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_timetable.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\fragment_timetableweb.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\header_gradient.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\home.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\list_group.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\list_result.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\layout\row.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values-w820dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values\color.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\res\xml\settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\com\android\vending\billing\IInAppBillingService.aidl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\adapter\ExamResultListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\adapter\MyExpandableListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\adapter\NavDrawerListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\AsyncHttpTask.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\DatabaseHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\FileCache.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\FunctionLibrary.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\HttpHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\HttpParser.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\InAppPurchase.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\MyPreferences.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\MySSLSocketFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\function\TimeTableStruct.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\model\NavDrawerItem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\ntlm\JCIFSEngine.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\ntlm\NTLMSchemeFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\AboutFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\CheckUpdateDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\ClassNoticesFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\HomeFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\LedgerBalanceFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\MainHome.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\OpenVPN.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\PasswordDialogFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\PreferenceActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\PreferenceFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\ResultFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\ScorunFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\SettingPreference.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\TimetableFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\src\my\madet\uniteninfo\TimetableFragmentWeb.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\appcompat_v7_23_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\commons_io_1_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\jcifs_1_3_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\json_20140107.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\mediarouter_v7_22_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\org_jbundle_util_osgi_wrapped_org_apache_http_client_4_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_ads_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_analytics_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_appindexing_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_appinvite_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_appstate_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_auth_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_base_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_basement_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_cast_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_drive_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_fitness_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_games_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_gcm_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_identity_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_location_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_maps_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_measurement_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_nearby_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_panorama_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_plus_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_safetynet_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_vision_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_wallet_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_wearable_8_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\support_annotations_23_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\support_v4_23_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\app\src\main\java\my\madet\function\AsyncHttpTask.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\app\src\main\java\my\madet\function\HttpHandler.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UnitenInfo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -191,32 +111,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="CheckUpdateDialog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2793296">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="-0.9848485">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LedgerBalanceFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/LedgerBalanceFragment.java">
+      <file leaf-file-name="MainHome.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
-              <folding />
+              <caret line="286" column="14" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/version.txt">
+      <file leaf-file-name="HttpsClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -226,8 +156,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -933,6 +863,10 @@
                 <option name="description" value="Uninstalls the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="uninstallRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="validateConfigSigning" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1666,6 +1600,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="validateConfigSigning" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="validateDebugSigning" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1786,7 +1724,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$" value="4316284715151" />
-        <entry key="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo" value="5798244000434" />
+        <entry key="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo" value="5805783548789" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2192,11 +2130,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MyGcmListenerService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/function/MyPreferences.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/RegistrationIntentService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/app/src/main/assets/about.htm" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java" />
       </list>
     </option>
   </component>
@@ -2242,57 +2183,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitenInfo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitenInfo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitenInfo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitenInfo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2565,6 +2455,57 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitenInfo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitenInfo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitenInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnitenInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2783,25 +2724,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50340134" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50340134" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29761904" sideWeight="0.51062214" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29761904" sideWeight="0.516692" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29761904" sideWeight="0.48937786" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29761904" sideWeight="0.48330805" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24886191" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2815,6 +2754,8 @@
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2825,11 +2766,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24829932" sideWeight="0.4969743" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42006803" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2849,8 +2790,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29761904" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24886535" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2879,6 +2820,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-17/android.jar!/android/view/ContextThemeWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39102563">
@@ -2907,7 +2862,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2975,7 +2929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3028,14 +2981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3448276">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/MyPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3077,22 +3022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="16" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51607144">
-          <caret line="155" column="25" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52678573">
@@ -3105,7 +3034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3639774">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3113,7 +3041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3129,7 +3056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.035714287">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3145,7 +3071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.42857143">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3158,7 +3083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.013133208">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3175,24 +3099,6 @@
         <state vertical-scroll-proportion="-0.41558442">
           <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20779221">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5376624">
-          <caret line="572" column="18" selection-start-line="572" selection-start-column="18" selection-end-line="572" selection-end-column="18" />
-          <folding>
-            <element signature="e#12996#13013#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3224,7 +3130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3232,7 +3137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3240,23 +3144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36253777">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/AsyncHttpTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16883117">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/LedgerBalanceFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3264,6 +3151,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4494382">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3116883">
+          <caret line="6" column="299" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2793296">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/LedgerBalanceFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33246753">
+          <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -3276,19 +3185,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/notes">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3116883">
-          <caret line="6" column="299" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="299" />
+        <state vertical-scroll-proportion="0.035714287">
+          <caret line="572" column="18" selection-start-line="572" selection-start-column="18" selection-end-line="572" selection-end-column="18" />
+          <folding>
+            <element signature="e#12996#13013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27272728">
+          <caret line="270" column="24" selection-start-line="270" selection-start-column="24" selection-end-line="270" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2793296">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="286" column="14" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9848485">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
