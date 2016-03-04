@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <PreferenceCategory android:title="Password Protect" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefPasswordProtected"
+            android:summary="Protect Using Uniten Info Password"
+            android:title="Password Protect Result" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefCheckUpdate"
+            android:summary="Perform update checking daily"
+            android:title="Check Update" >
+        </CheckBoxPreference>
+
+       
+    </PreferenceCategory>
+
+</PreferenceScreen>

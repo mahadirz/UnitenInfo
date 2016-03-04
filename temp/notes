@@ -1,0 +1,7 @@
+=== Each files in this directory are just my scratches and notes ===
+
+
+Cloud Messaging:
+Start => https://developers.google.com/cloud-messaging/android/start
+send => https://developers.google.com/cloud-messaging/http
+uniten info : https://developers.google.com/mobile/add?platform=android&cntapi=gcm&cntapp=Default%20Demo%20App&cntpkg=gcm.play.android.samples.com.gcmquickstart&cnturl=https:%2F%2Fdevelopers.google.com%2Fcloud-messaging%2Fandroid%2Fstart%3Fconfigured%3Dtrue&cntlbl=Continue%20Try%20Cloud%20Messaging
