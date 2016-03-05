@@ -11,46 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b62b2779-679b-4e2f-a015-6c17a816a76d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\appcompat_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\commons_io_1_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\jcifs_1_3_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\json_20140107.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\mediarouter_v7_22_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\org_jbundle_util_osgi_wrapped_org_apache_http_client_4_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_ads_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_analytics_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_appindexing_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_appinvite_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_appstate_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_auth_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_base_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_basement_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_cast_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_drive_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_fitness_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_games_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_gcm_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_identity_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_location_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_maps_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_measurement_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_nearby_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_panorama_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_plus_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_safetynet_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_vision_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_wallet_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\play_services_wearable_8_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\support_annotations_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\.idea\libraries\support_v4_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\app\src\main\java\my\madet\function\AsyncHttpTask.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mahadir\AndroidStudioProjects\UnitenInfo\app\src\main\java\my\madet\function\HttpHandler.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java" afterPath="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/version.txt" afterPath="$PROJECT_DIR$/version.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="UnitenInfo.iws" />
@@ -101,52 +63,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <file leaf-file-name="version.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/version.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.07575758">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckUpdateDialog.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9848485">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainHome.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="286" column="14" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpsClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -2131,13 +2053,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/function/MyPreferences.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/RegistrationIntentService.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/app/src/main/assets/about.htm" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/OpenVPN.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/MainHome.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/function/HttpsClient.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/my/madet/uniteninfo/CheckUpdateDialog.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/version.txt" />
       </list>
     </option>
   </component>
@@ -2731,7 +2654,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50340134" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50340134" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2862,6 +2785,7 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3086,14 +3010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/my/madet/function/FunctionLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.41558442">
@@ -3133,13 +3049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/version.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/mahadirlab/Android/sdk/platforms/android-23/android.jar!/android/os/AsyncTask.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36253777">
@@ -3173,14 +3082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33246753">
           <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3234,6 +3135,30 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45454547">
+          <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/version.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07575758">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
